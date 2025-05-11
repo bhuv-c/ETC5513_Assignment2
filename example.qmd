@@ -1,0 +1,19 @@
+---
+title: "example"
+format: html
+---
+
+## **Introduction**
+
+The Guide to create a Git repository from existing work, using the command line interface (CLI), managing branches, handling conflicts, and working with GitHub for collaboration.
+
+# Setting Up a New Project in RStudio
+
+## Step 1: Create a New Project
+
+1.  Open RStudio.
+2.  Go to **File \> New Project...**.
+3.  Choose **New Directory \> New Project**.
+4.  Name the project `assignment-2`
+
+This sets up a new project in the local repository.
