@@ -16,12 +16,12 @@ The Guide to create a Git repository from existing work, using the command line 
 3.  Choose **New Directory \> New Project**.
 4.  Name the project `assignment-2`
 
-This sets up a new project in the local repository.
+This sets up a new RStudio project in the local repository.
 
 ## Step 8: Add Conflict in `main`
 
 ```bash
 git add example.qmd
 git commit -m "Conflicting change to example.qmd"
-git push
+git push 
 ```
