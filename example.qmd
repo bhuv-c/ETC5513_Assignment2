@@ -100,3 +100,41 @@ git add example.qmd
 git commit -m "Conflicting change to example.qmd"
 git push 
 ```
+
+
+## Step 9: Merge and Resolve Conflict
+
+```bash
+git merge testbranch
+# Resolve conflict manually in example.qmd
+git add example.qmd
+git commit -m "Merge testbranch into main and resolve conflict"
+git push
+```
+
+---
+
+# Tagging and Cleaning Up
+
+## Step 10: Tag Commit
+
+```bash
+git tag -a v1.0 -m "Version 1.0 – stable release"
+git push origin v1.0
+```
+
+## Step 11: Delete Branch
+
+```bash
+git branch -d testbranch
+git push origin --delete testbranch
+```
+
+## Step 12: View Commit Log
+
+```bash
+git log --oneline
+```
+
+---
+
