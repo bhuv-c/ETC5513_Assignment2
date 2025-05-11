@@ -17,3 +17,68 @@ The Guide to create a Git repository from existing work, using the command line 
 4.  Name the project `assignment-2`
 
 This sets up a new project in the local repository.
+
+# Creating a Git Repository from Existing Work
+
+## Step 2: Initialise Git
+
+-   Open the RStudio Terminal and navigate to the root of your project.
+
+-   Type
+
+``` bash
+git init
+```
+
+This command will create a `.git` folder for tracking the changes.
+
+## Step 3: Add a .gitignore File
+
+Create a `.gitignore` file to exclude unnecessary files:
+
+``` bash
+echo ".Rproj.user/" > .gitignore
+git status
+```
+
+## Step 4: Add and Commit Files
+
+Add all relevant files and make your initial commit:
+
+``` bash
+git add .
+git commit -m "Initial commit with example.qmd"
+```
+
+------------------------------------------------------------------------
+
+# Connecting to GitHub
+
+## Step 5: Create and Push to GitHub
+
+1.  Go to GitHub and create a new repository called `assignment2`. Don’t initialize it with a README or .gitignore.
+
+2.  Back in the terminal, connect the remote:
+
+``` bash
+git remote add origin git@github.com:bhuv-c/ETC5513_Assignment2.git
+git branch -M main
+git push -u origin main
+```
+
+------------------------------------------------------------------------
+
+# Branching and Collaboration
+
+## Step 6: Create a Branch and Modify Files
+
+```bash 
+git branch testbranch
+git branch
+git switch testbranch
+```
+```bash
+git add example.qmd 
+git commit -m "Modify example.qmd in testbranch" 
+git push -u origin testbranch
+```
