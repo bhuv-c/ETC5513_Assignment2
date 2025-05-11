@@ -79,6 +79,15 @@ git switch testbranch
 ```
 ```bash
 git add example.qmd 
-git commit -m "Modify example.qmd in testbranch" 
+git commit -m "Made changes on example.qmd in testbranch" 
 git push -u origin testbranch
 ```
+
+## Step 7: Add Data and Amend Commit
+
+```bash
+git add Data/
+git commit --amend --no-edit
+git push --force
+```
+
