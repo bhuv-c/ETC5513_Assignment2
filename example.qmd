@@ -17,3 +17,5 @@ The Guide to create a Git repository from existing work, using the command line 
 4.  Name the project `assignment-2`
 
 This sets up a new project in the local repository.
+
+## Step 8: Add Conflict in `main`
